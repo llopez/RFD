@@ -1,0 +1,21 @@
+
+<div>
+  <%= link_to 'Edit', edit_place_path(@place) %> |
+  <%= link_to 'Back', places_path %>
+</div>
+
+<h1> 
+  <%= @place.title %> 
+</h1>
+
+<p>
+  <strong>
+    <%= @place.description %>
+  </strong>
+</p>
+
+<p>
+  <strong>
+    <%= @place.address %>
+  </strong>
+</p>

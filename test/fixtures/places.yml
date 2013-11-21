@@ -1,0 +1,11 @@
+subway:
+  id: 1
+  title: Subway
+  description: Fast Food Sandwich
+  address: Address 1
+
+macdonalds:
+  id: 2
+  title: Mc Donalds
+  description: Fast Food Hambuergers
+  address: Address 2
