@@ -19,3 +19,11 @@
     <%= @place.address %>
   </strong>
 </p>
+<hr/>
+<h3>Comentarios</h3>
+
+<%= render 'comments/form' %>
+
+<ul id='comments'>
+  <%= render @place.comments %>
+</ul>

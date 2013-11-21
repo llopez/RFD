@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131120003247) do
+ActiveRecord::Schema.define(version: 20131120013358) do
+
+  create_table "comments", force: true do |t|
+    t.text     "body"
+    t.integer  "place_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["place_id"], name: "index_comments_on_place_id"
 
   create_table "places", force: true do |t|
     t.string   "title"
