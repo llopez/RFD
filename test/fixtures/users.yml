@@ -1,0 +1,9 @@
+john:
+  email: john@exmaple.com
+  password_digest: $2a$10$rItMi3X6/BqCT4W3fZ8aZeWuMJ3GHO.QEmNaPC8GXaVjzSvB0KCI.
+  nickname: john
+
+mike:
+  email: mike@exmaple.com
+  password_digest: $2a$10$rItMi3X6/BqCT4W3fZ8aZeWuMJ3GHO.QEmNaPC8GXaVjzSvB0KCI.
+  nickname: mike
