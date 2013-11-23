@@ -8,10 +8,9 @@
   </head>
   <body>
     <div id='content'>
-      <div>
-        <%= link_to 'Sign Up', sign_up_path %>
-      </div>
+      <%= render 'shared/session' %>
       <p id="notice"><%= notice %></p>
+      <p id="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </body>
