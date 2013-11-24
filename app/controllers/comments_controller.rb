@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   def create
     @place = Place.find(params[:place_id])
     @comment = @place.comments.build(comment_params)
+    @comment.author = current_user
 
     respond_to do |format|
       if @comment.save

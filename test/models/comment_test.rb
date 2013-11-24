@@ -20,8 +20,9 @@ class CommentTest < ActiveSupport::TestCase
   end
   
   test "valid comment" do
+    @user = users(:john)
     @place = places(:subway)
-    @comment = Comment.new body: 'This is the comment', place: @place
+    @comment = Comment.new body: 'This is the comment', place: @place, author: @user
     assert @comment.valid?
     assert_empty @comment.errors[:body]
     assert_empty @comment.errors[:place]

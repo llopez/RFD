@@ -1,7 +1,9 @@
 one:
   body: This is a comment
   place_id: 1
+  author_id: 1
 
 two:
   body: This is another comment
   place_id: 2
+  author_id: 2
