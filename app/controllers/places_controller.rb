@@ -4,7 +4,8 @@ class PlacesController < ApplicationController
   # GET /places
   # GET /places.json
   def index
-    @places = Place.all
+    @q = Place.search(params[:q])
+    @places =  @q.result
   end
 
   # GET /places/1

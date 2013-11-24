@@ -27,3 +27,11 @@
   list-style: none;
   padding: 5px;
 }
+
+#search{
+  float: right;
+}
+
+#session{
+  float: right;
+}
